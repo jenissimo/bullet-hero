@@ -1,0 +1,7 @@
+name=Bullet Hero
+author=Jenissimo
+description=Become a bullet hero!
+bundleID=com.jenissimo.bullethero
+version=1.0
+buildNumber=1
+imagePath=images/

@@ -13,7 +13,7 @@ function Enemy.new(spriteSheet, x, y, speed, animations, player)
     -- Add more enemy-specific properties if needed
     self.player = player
     self.rect = {x1=3, y1=4, x2=13, y2=15}
-    self.weapon = MeleeWeapon.new(spriteSheet, "enemy", 0.5, 10, player)
+    self.weapon = MeleeWeapon.new(spriteSheet, "player", 0.75, 10, player)
     self.attackDistance = 24
     self.maxHp = 20
     self.hp = self.maxHp

@@ -1,5 +1,9 @@
+import "Managers/SceneManager"
+
 Entity = {}
 Entity.__index = Entity
+
+local sceneManager = SceneManager.new()
 
 -- Constructor for the Entity class with position parameters
 function Entity.new(x, y)
@@ -38,6 +42,7 @@ function Entity:move(dx, dy)
 end
 
 function Entity:destroy()
+    print("Entity destroyed")
     self.tags = nil
-    SceneManager:removeEntity(self)
+    sceneManager:removeEntity(self)
 end
